@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="150.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Snippet">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="10.4" layoutY="16.8" prefHeight="113.0" prefWidth="775.0" style="-fx-background-color: #CFCFCF;" stylesheets="@style.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="17.0">
+         <children>
+            <Label fx:id="fromLabel" prefHeight="50.0" prefWidth="178.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" text="From">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label text="To">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="ToLabel" prefHeight="58.0" prefWidth="254.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" text="DESTINATION">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="fair" contentDisplay="CENTER" prefHeight="18.0" prefWidth="82.0" text="Fair" textAlignment="JUSTIFY">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Pane prefHeight="114.0" prefWidth="51.0" />
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="103.0" style="-fx-background-color: #ff991c;" text="Book Now" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

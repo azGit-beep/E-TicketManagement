@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProfileViewerController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="background" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="805.0" style="-fx-background-color: #ff991c;">
+               <children>
+                  <ImageView fx:id="backArrowToHomePage" fitHeight="39.0" fitWidth="47.0" onMousePressed="#goToHomePage" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/backbutton.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label text="PROFILE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="330.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="234.0" prefWidth="800.0" style="-fx-background-color: #ff991c;">
+               <children>
+                  <StackPane prefHeight="234.0" prefWidth="297.0">
+                     <children>
+                        <Circle fill="WHITE" radius="80.0" stroke="WHITE" strokeType="INSIDE" />
+                        <ImageView fitHeight="188.0" fitWidth="211.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/account_circle_80dp_FF991C_FILL0_wght400_GRAD0_opsz48.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <Label prefHeight="52.0" prefWidth="434.0" text="ASHIK ROY">
+                     <font>
+                        <Font name="Cambria" size="43.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="329.0" prefWidth="800.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="437.0" prefWidth="422.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="366.0" style="-fx-background-color: #FFFFFF;" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/mail_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="51.0" prefWidth="186.0">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="138.0" text="Mail">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="18.0" prefWidth="146.0" text="ashikroy418@gmail.com" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" />
+                           </VBox.margin>
+                           <styleClass>
+                              <String fx:value="round" />
+                              <String fx:value="boxShadow" />
+                           </styleClass>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="307.0" style="-fx-background-color: #FFFFFF;" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/phone_iphone_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="51.0" prefWidth="186.0">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="138.0" text="Mobile Number">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="18.0" prefWidth="146.0" text="017********" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="round" />
+                              <String fx:value="boxShadow" />
+                           </styleClass>
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="366.0" style="-fx-background-color: #FFFFFF;" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/badge_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="51.0" prefWidth="186.0">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="138.0" text="Identification Number">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="18.0" prefWidth="146.0" text="58984957234742934875" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="round" />
+                              <String fx:value="boxShadow" />
+                           </styleClass>
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="437.0" prefWidth="435.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="366.0" style="-fx-background-color: #FFFFFF;" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/calendar_month_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="51.0" prefWidth="186.0">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="138.0" text="Date of Birth">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="18.0" prefWidth="146.0" text="21-07-2002" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="round" />
+                              <String fx:value="boxShadow" />
+                           </styleClass>
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="366.0" style="-fx-background-color: #FFFFFF;" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/home_pin_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="51.0" prefWidth="186.0">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="138.0" text="Address">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="18.0" prefWidth="146.0" text="CUET,Raozan,Chittagong" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="round" />
+                              <String fx:value="boxShadow" />
+                           </styleClass>
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="366.0" style="-fx-background-color: #FFFFFF;" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/local_post_office_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="51.0" prefWidth="186.0">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="138.0" text="Post Code">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="18.0" prefWidth="146.0" text="4321" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="round" />
+                              <String fx:value="boxShadow" />
+                           </styleClass>
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="800.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="81.0" prefWidth="200.0" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="38.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/edit_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="38.0" prefWidth="141.0" stylesheets="@style.css" text="Edit Profile">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="boxShadow" />
+                        <String fx:value="roundBOx" />
+                        <String fx:value="round" />
+                     </styleClass>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

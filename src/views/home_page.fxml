@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageController">
+   <children>
+      <BorderPane layoutX="255.0" layoutY="198.0" prefHeight="700.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="46.0" prefWidth="800.0" style="-fx-background-color: #F3921B;">
+                     <children>
+                        <StackPane prefHeight="37.0" prefWidth="89.0">
+                           <children>
+                              <Label fx:id="MenuClose" text="MENU">
+                                 <graphic>
+                                    <ImageView fx:id="menu1" fitHeight="36.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/menubar.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                              <Label fx:id="Menu" text="MENU">
+                                 <graphic>
+                                    <ImageView fx:id="menu" fitHeight="36.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/menubar.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <Label text="MY TICKET" textFill="WHITE">
+                           <font>
+                              <Font name="Onyx" size="32.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <StackPane prefHeight="309.0" prefWidth="776.0">
+                     <children>
+                        <ImageView fitHeight="320.0" fitWidth="808.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/buswithrout.jpg" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="34.0" prefWidth="800.0" stylesheets="@../../../../../aksjfh/E-ticket-managemetn/Ticket_Management_system/src/CssFiles/style.css">
+                           <children>
+                              <ImageView fitHeight="34.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../aksjfh/E-ticket-managemetn/Ticket_Management_system/src/images/etickettransparentclolured.png" />
+                                 </image>
+                              </ImageView>
+                              <HBox fx:id="gotoBookABus" alignment="CENTER" onMousePressed="#gotoBookABus" prefHeight="99.0" prefWidth="102.0" stylesheets="@../../../../../aksjfh/E-ticket-managemetn/Ticket_Management_system/src/CssFiles/style.css">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/directions_bus_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" styleClass="homepagebuttons" stylesheets="@../../../../../aksjfh/E-ticket-managemetn/Ticket_Management_system/src/CssFiles/style.css" text="Bus" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="20.0" />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="homepageButtonHolder" />
+                                    <String fx:value="boxShadow" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="34.0" prefWidth="102.0" stylesheets="@../../../../../aksjfh/E-ticket-managemetn/Ticket_Management_system/src/CssFiles/style.css">
+                                 <children>
+                                    <ImageView fx:id="goToTrainBook" fitHeight="32.0" fitWidth="37.0" onMousePressed="#goToTrainBook" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/train_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" styleClass="homepagebuttons" stylesheets="@../../../../../aksjfh/E-ticket-managemetn/Ticket_Management_system/src/CssFiles/style.css" text="Train" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="20.0" />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="boxShadow" />
+                                    <String fx:value="homepageButtonHolder" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="34.0" prefWidth="102.0" stylesheets="@../../../../../aksjfh/E-ticket-managemetn/Ticket_Management_system/src/CssFiles/style.css">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/flight_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" styleClass="homepagebuttons" stylesheets="@../../../../../aksjfh/E-ticket-managemetn/Ticket_Management_system/src/CssFiles/style.css" text="Air" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="20.0" />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="boxShadow" />
+                                    <String fx:value="homepageButtonHolder" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="34.0" prefWidth="115.0" stylesheets="@../../../../../aksjfh/E-ticket-managemetn/Ticket_Management_system/src/CssFiles/style.css">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/customercare.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="74.0" styleClass="homepagebuttons" stylesheets="@../../../../../aksjfh/E-ticket-managemetn/Ticket_Management_system/src/CssFiles/style.css" text="Contact us" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="20.0" />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="boxShadow" />
+                                    <String fx:value="homepageButtonHolder" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox fx:id="LogoutButton" alignment="CENTER" onMousePressed="#goToLoginPage" prefHeight="34.0" prefWidth="102.0" stylesheets="@../../../../../aksjfh/E-ticket-managemetn/Ticket_Management_system/src/CssFiles/style.css">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/logout_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="62.0" styleClass="homepagebuttons" stylesheets="@../../../../../aksjfh/E-ticket-managemetn/Ticket_Management_system/src/CssFiles/style.css" text="Logout" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="20.0" />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="boxShadow" />
+                                    <String fx:value="homepageButtonHolder" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                           <StackPane.margin>
+                              <Insets bottom="20.0" top="260.0" />
+                           </StackPane.margin>
+                        </HBox>
+                        <VBox fx:id="Slider" alignment="TOP_CENTER" maxHeight="244.0" prefHeight="246.0" prefWidth="178.0">
+                           <StackPane.margin>
+                              <Insets bottom="70.0" right="630.0" />
+                           </StackPane.margin>
+                           <children>
+                              <HBox fx:id="goToDashboard" alignment="CENTER" onMousePressed="#goToDashboard" prefHeight="32.0" prefWidth="162.0" style="-fx-background-color: #FFFFFF;" styleClass="round" stylesheets="@style.css">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/dashboard.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" prefHeight="18.0" prefWidth="110.0" text="DASHBOARD" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="5.0" right="5.0" top="20.0" />
+                                 </VBox.margin>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </HBox>
+                              <HBox fx:id="profile" alignment="CENTER" onMousePressed="#goToProfileView" prefHeight="32.0" prefWidth="162.0" style="-fx-background-color: #FFFFFF;" styleClass="round" stylesheets="@style.css">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/profilee.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" prefHeight="18.0" prefWidth="110.0" text="PROFILE" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox fx:id="goToPayment" alignment="CENTER" onMousePressed="#goToPayment" prefHeight="32.0" prefWidth="162.0" style="-fx-background-color: #FFFFFF;" styleClass="round" stylesheets="@style.css">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/pay.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" prefHeight="18.0" prefWidth="110.0" text="PAYMENT" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox fx:id="gotToFoodItem" alignment="CENTER" onMousePressed="#goToFoodItemPage" prefHeight="32.0" prefWidth="162.0" style="-fx-background-color: #FFFFFF;" styleClass="round" stylesheets="@style.css">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/food.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" prefHeight="18.0" prefWidth="110.0" text="FOOD ITEM" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox fx:id="goToHelpline" alignment="CENTER" onMousePressed="#goToHelpline" prefHeight="32.0" prefWidth="162.0" style="-fx-background-color: #FFFFFF;" styleClass="round" stylesheets="@style.css">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/customercare.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" prefHeight="18.0" prefWidth="110.0" text="HELP LINE" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+         </top>
+         <right>
+            <ScrollPane fitToWidth="true" hvalue="1.0" pannable="true" prefWidth="800.0" vvalue="0.74" BorderPane.alignment="CENTER">
+               <content>
+                  <VBox maxHeight="350.0" prefHeight="404.0" prefWidth="802.0" styleClass="background" stylesheets="@style.css">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="115.0" prefWidth="782.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="BUY TICKETS" textFill="#ff991c">
+                                       <font>
+                                          <Font name="System Bold" size="29.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="  In 3 easy steps">
+                                       <font>
+                                          <Font name="Bodoni MT" size="28.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="798.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="74.0" prefWidth="263.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                                       <children>
+                                          <ImageView fitHeight="74.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/orangesearch.png" />
+                                             </image>
+                                          </ImageView>
+                                          <VBox alignment="CENTER" prefHeight="74.0" prefWidth="174.0">
+                                             <children>
+                                                <Label prefHeight="43.0" prefWidth="120.0" text="Search">
+                                                   <font>
+                                                      <Font name="System Bold" size="29.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="27.0" prefWidth="147.0" text="select origin, destination" />
+                                                <Label prefHeight="27.0" prefWidth="147.0" text="journey date, and search" />
+                                                <Label prefHeight="27.0" prefWidth="147.0" text="for bus" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </HBox>
+                                    <Pane prefHeight="96.0" prefWidth="127.0" />
+                                    <HBox alignment="CENTER" prefHeight="74.0" prefWidth="263.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                                       <children>
+                                          <ImageView fitHeight="74.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/touch.png" />
+                                             </image>
+                                          </ImageView>
+                                          <VBox alignment="CENTER" prefHeight="74.0" prefWidth="174.0">
+                                             <children>
+                                                <Label prefHeight="43.0" prefWidth="120.0" text="Select">
+                                                   <font>
+                                                      <Font name="System Bold" size="29.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="27.0" prefWidth="147.0" text="Select your desired" />
+                                                <Label prefHeight="27.0" prefWidth="147.0" text="trip and choose" />
+                                                <Label prefHeight="27.0" prefWidth="147.0" text="your seats" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="74.0" prefWidth="263.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                                 <children>
+                                    <ImageView fitHeight="74.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/payment.png" />
+                                       </image>
+                                    </ImageView>
+                                    <VBox alignment="CENTER" prefHeight="74.0" prefWidth="174.0">
+                                       <children>
+                                          <Label prefHeight="43.0" prefWidth="120.0" text="Pay">
+                                             <font>
+                                                <Font name="System Bold" size="29.0" />
+                                             </font>
+                                          </Label>
+                                          <Label prefHeight="27.0" prefWidth="147.0" text="Pay by bank cards" />
+                                          <Label prefHeight="27.0" prefWidth="147.0" text="or" />
+                                          <Label prefHeight="27.0" prefWidth="147.0" text="mobile payment" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="128.0" prefWidth="798.0" />
+                     </children>
+                  </VBox>
+               </content>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ScrollPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

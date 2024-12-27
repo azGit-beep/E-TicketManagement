@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchTrain">
+    <children>
+        <HBox layoutX="-3.0" prefHeight="40.0" prefWidth="807.0" style="-fx-background-color: #F3921B;">
+            <children>
+                <ImageView fx:id="goToHome" fitHeight="42.0" fitWidth="47.0" onMousePressed="#backToHomePage" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/backbutton.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+        <VBox layoutX="-1.0" layoutY="41.0" prefHeight="659.0" prefWidth="804.0" style="-fx-background-color: #FDFBD4;" />
+        <VBox layoutX="1.0" layoutY="44.0" prefHeight="525.0" prefWidth="369.0" style="-fx-background-color: #FDFBD4;">
+            <children>
+                <ImageView fitHeight="297.0" fitWidth="291.0" pickOnBounds="true" preserveRatio="true">
+                    <VBox.margin>
+                        <Insets left="30.0" right="59.0" top="170.0" />
+                    </VBox.margin>
+                    <image>
+                        <Image url="@../images/Train%2520Ticket.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </VBox>
+        <VBox layoutX="365.0" layoutY="90.0" prefHeight="508.0" prefWidth="423.0" stylesheets="@style.css">
+            <children>
+                <HBox alignment="CENTER" prefHeight="40.0" prefWidth="414.0" stylesheets="@style.css">
+                    <children>
+                        <ImageView fitHeight="83.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/fromstartplace.png" />
+                            </image>
+                        </ImageView>
+                        <TextField prefHeight="26.0" prefWidth="303.0" promptText="Select Station" styleClass="transparentInputboxforsearchBus" stylesheets="@style.css" />
+                    </children>
+                    <styleClass>
+                        <String fx:value="whiteBackgroundBoxForSearchBus" />
+                        <String fx:value="boxShadow" />
+                    </styleClass>
+                    <VBox.margin>
+                        <Insets left="45.0" right="80.0" top="50.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="40.0" prefWidth="414.0" stylesheets="@style.css">
+                    <children>
+                        <ImageView fitHeight="83.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/destination.png" />
+                            </image>
+                        </ImageView>
+                        <TextField prefHeight="26.0" prefWidth="303.0" promptText="Select Destination" styleClass="transparentInputboxforsearchBus" stylesheets="@style.css" />
+                    </children>
+                    <styleClass>
+                        <String fx:value="whiteBackgroundBoxForSearchBus" />
+                        <String fx:value="boxShadow" />
+                    </styleClass>
+                    <VBox.margin>
+                        <Insets left="46.0" right="80.0" top="30.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="40.0" prefWidth="414.0" stylesheets="@style.css">
+                    <children>
+                        <ImageView fitHeight="83.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/seat.png" />
+                            </image>
+                        </ImageView>
+                        <TextField prefHeight="26.0" prefWidth="303.0" promptText="Select Class" styleClass="transparentInputboxforsearchBus" stylesheets="@style.css" />
+                    </children>
+                    <styleClass>
+                        <String fx:value="whiteBackgroundBoxForSearchBus" />
+                        <String fx:value="boxShadow" />
+                    </styleClass>
+                    <VBox.margin>
+                        <Insets left="46.0" right="80.0" top="30.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="54.0" prefWidth="391.0" stylesheets="@style.css">
+                    <children>
+                        <DatePicker prefHeight="26.0" prefWidth="275.0" promptText="Pick a date" styleClass="transparentInputboxforsearchBus" stylesheets="@style.css" />
+                    </children>
+                    <styleClass>
+                        <String fx:value="whiteBackgroundBoxForSearchBus" />
+                        <String fx:value="boxShadow" />
+                    </styleClass>
+                    <VBox.margin>
+                        <Insets left="46.0" right="80.0" top="30.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="43.0" prefWidth="452.0" style="-fx-background-color: #ff991c; -fx-background-radius: 30;" styleClass="boxShadow" stylesheets="@style.css">
+                    <children>
+                        <ImageView fitHeight="46.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/search.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="80.0" right="105.0" top="30.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+            <styleClass>
+                <String fx:value="round" />
+                <String fx:value="boxShadow" />
+                <String fx:value="whiteBackgroundBoxForSearchBus" />
+            </styleClass>
+        </VBox>
+    </children>
+</AnchorPane>

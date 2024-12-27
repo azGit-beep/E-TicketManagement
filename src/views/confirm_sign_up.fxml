@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.confirm_sign_up_controller">
+   <children>
+      <BorderPane layoutX="290.0" layoutY="242.0" prefHeight="200.0" prefWidth="200.0" styleClass="background" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="150.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <Pane prefHeight="400.0" prefWidth="250.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Pane prefHeight="400.0" prefWidth="250.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <Pane prefHeight="150.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <VBox prefHeight="300.0" prefWidth="378.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;" styleClass="boxShadow" stylesheets="@style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 30;" styleClass="successfullsignupbox" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/ticksignpicture.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="SUCCESS" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Congratulation, Your account has" />
+                        <Label text="been created successfully!" />
+                        <Label fx:id="user_name_holder" text="user_name: " />
+                        <Button fx:id="goToLoginPage" mnemonicParsing="false" onAction="#goTOLoginPage" styleClass="login_in_successfull_login_box" stylesheets="@style.css" text="Login" textFill="#151515">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

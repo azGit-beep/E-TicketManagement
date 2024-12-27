@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FindBusController">
+   <children>
+      <BorderPane layoutX="317.0" layoutY="269.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="27.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="homeIcon" fitHeight="31.0" fitWidth="50.0" onMousePressed="#goToHome" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/home_24dp_5F6368.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="200.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Pane prefHeight="62.0" prefWidth="109.0" />
+                  <Label prefHeight="49.0" prefWidth="300.0" text="FIND YOUR BUS" textFill="#ff991c">
+                     <font>
+                        <Font size="41.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="39.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/bus-png-icon-8.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <ImageView fitHeight="277.0" fitWidth="317.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/busstation.png" />
+               </image>
+            </ImageView>
+         </left>
+         <center>
+            <VBox prefHeight="466.0" prefWidth="482.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="10.0" right="30.0" top="30.0" />
+               </BorderPane.margin>
+               <children>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="414.0" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="83.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/fromstartplace.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="fromlebel" prefHeight="26.0" prefWidth="303.0" promptText="From" styleClass="transparentInputboxforsearchBus" stylesheets="@style.css" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="whiteBackgroundBoxForSearchBus" />
+                        <String fx:value="boxShadow" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets bottom="50.0" left="30.0" right="30.0" top="100.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="54.0" prefWidth="381.0" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="83.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/destination.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="tolebel" prefHeight="26.0" prefWidth="307.0" promptText="To" styleClass="transparentInputboxforsearchBus" stylesheets="@style.css" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="whiteBackgroundBoxForSearchBus" />
+                        <String fx:value="boxShadow" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets bottom="50.0" left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="54.0" prefWidth="391.0" stylesheets="@style.css">
+                     <children>
+                        <DatePicker prefHeight="26.0" prefWidth="344.0" promptText="Pick a date" styleClass="transparentInputboxforsearchBus" stylesheets="@style.css" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="whiteBackgroundBoxForSearchBus" />
+                        <String fx:value="boxShadow" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets bottom="50.0" left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="availablebus" alignment="CENTER" onMousePressed="#goToAvailableBus" prefHeight="43.0" prefWidth="452.0" style="-fx-background-color: #ff991c; -fx-background-radius: 30;" styleClass="boxShadow" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="46.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/search.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <Pane prefHeight="11.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
